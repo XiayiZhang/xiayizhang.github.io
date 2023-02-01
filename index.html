@@ -1,35 +1,64 @@
-<!DOCTYPE html><html><meta charst="utf-8">
-<title>导航页面-中文</title>
-<head>
-    <table>
-        <select>
-            <option value="na">language</option>
-            <option value="cn">中文🇨🇳</option>
-            <option value="es">Esperanto</option>
-            <option value="en">English🇬🇧</option>
-            <option value="jp">日本語🇯🇵</option>
-            <option value="ar">بالعربية🇸🇦🇦🇪🇪🇬</option>
-        </select>
-    </table>
-    <script>
-        function selectcity(cn){
-            window.location.replace('/')
-        }
-        function selectcity(es){
-            window.location.replace('/')
-        }
-        function selectcity(en){
-            window.location.replace('/')
-        }
-        function selectcity(jp){
-            window.location.replace('/')
-        }
-        function selectcity(ar){
-            window.location.replace('/')
-        }
-    </script>
-</head>
-<body>
-    <a href="https://xiayizhang.github.io/wajg">缺德导航🧭</a><br>
-    <a href="https://xiayizhang.github.io/feedback">反馈</a><br>
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<metacharset="UTF-8">
+		<title>缺德导航🧭-中文</title>
+			<style>
+				.a{
+					width:200px;
+				}
+				.b{
+					width:100px;
+					height:50px;
+					text-align:center;
+					line-height:50px;
+					background:lightblue;
+					font-size:30px;
+				}
+				.c{
+					height:200px;
+					width:100px;
+					display:none;
+					background:gray;
+				}
+				.b:hover{
+					background:green;
+					cursor:pointer;
+				}
+				.a:hover.c{
+					display:block;
+				}
+				a{
+					display:block;
+					text-decoration:none;
+					height:40px;
+					text-align:center;
+					line-height:40px;
+					color:#ccc;
+				}
+                      a:hover{
+					background:green;
+					color:pink;
+				}
+			</style>
+		</head>
+        <body>
+			<div class="a">
+				<div class="b">language</div>
+					<div class="c">
+						<a href="https://xiayizhang.github.io/">中文🇨🇳</a>
+						<a href="https://xiayizhang.github.io/en">English🇬🇧🇺🇸</a>
+						<a href="https://xiayizhang.github.io/es">Es</a>
+						<a href="https://xiayizhang.github.io/jp">日本語🇯🇵</a>
+						<a href="https://xiayizhang.github.io/ar">ar🇸🇦🇦🇪🇪🇬</a>
+					 </div>
+				</div>
+            <div class="b">子域名</div>
+					<div class="c">
+						<a href="https://xiayizhang.github.io/wajg">缺德导航</a>
+						<a href="https://xiayizhang.github.io/feedback">反馈、意见、建议</a>
+					 </div>
+				</div>
+			</div>
+		</body>
+</html>
