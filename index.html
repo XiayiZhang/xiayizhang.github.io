@@ -7,16 +7,24 @@
         font-size: 45px;
         text-align: center;
     }
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: light) {
         body {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;         
+            a:link {color:#5FF00;}
+            a:visited {color:#30000;}
+            a:hover {color:#FFFFF;}
+            a:active {color:#00000;}
         }
     }
     @media (prefers-color-scheme: dark) {
         body {
             background-color: black;
             color: white;
+            a:link {color:#A5A00;}
+            a:visited {color:#90000;}
+            a:hover {color:#00000;}
+            a:active {color:#FFFFF;}
         }
     }
 </style>
