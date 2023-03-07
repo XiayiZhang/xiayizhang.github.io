@@ -1,46 +1,64 @@
 <!DOCTYPE html>
-<html><head>
-<metacharset="UTF-8">
-<title>主页-中文</title>
-<style>
-    .txt1{
-        font-size: 45px;
-        text-align: center;
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>XiayiZhang</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+    .fakeimg {
+        height: 200px;
+         background: #aaa;
     }
-    @media (prefers-color-scheme: light) {
-        body {
-            background-color: white;
-            color: black;         
-        }
-        a:link {color:#5FF00;}
-        a:visited {color:#30000;}
-        a:hover {color:#FFFFF;}
-        a:active {color:#00000;}
-    }
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: black;
-            color: white;
-        }
-        a:link {color:#A5A00;}
-        a:visited {color:#90000;}
-        a:hover {color:#00000;}
-        a:active {color:#FFFFF;}
-    }
-</style>
-<p class="txt1">语言</p>
-<ul class="txt1">
-    <li><a href="https://xiayizhang.github.io/">中文🇨🇳</a></li>
-    <li><a href="https://xiayizhang.github.io/en">English🇬🇧🇺🇸</a></li>
-    <li><a href="https://xiayizhang.github.io/es">Esperanto<img src="data:image/webp;base64,UklGRhoBAABXRUJQVlA4TA4BAAAvHYAEAD/CppEkRz37/IF+9JE30zTYNpKkqO8p/8zeeu8TYGZqN5IkOVFN8P/HYWJha625m5r/UCNAAhRKgKoKiT/U5PUqIADTfIkgFUKAQilQAQSA/KEaCsnC3Q3u7RbSWlQWf35/FF/V+N70fh/VXtb6ft5poX+80p8tLxWAIiQoQCiQYAJeQ/ZdhN+fCoSAIAAJXgBHkm2ryY3jrsHdLYZDfnT/q+LOmEb0fwIAGaUiVNS9xA9+BzQsljBo+cnwdB5M9eqVk9k83p/XVqndOBpWaboGGl5M2h2Oe5qMwjybm5XR5AASJAkKRk9Kq232u2anVxnfKRfLdi3Lti3nGzD9UIggCAIRcKPg3wY="></a></li>
-    <li><a href="https://xiayizhang.github.io/jp">日本語🇯🇵</a></li>
-    <li><a href="https://xiayizhang.github.io/ar">العربيه🇸🇦🇦🇪🇪🇬</a></li>
-</ul>
-<p class="txt1">传送门</p>
-<ul class="txt1">
-    <li><a href="https://xiayizhang.github.io/bomb_weeper/">无聊的话，玩玩扫雷吧！</a></li>
-    <li><a href="https://xiayizhang.github.io/wajg">缺德导航</a></li>
-    <li><a href="https://xiayizhang.github.io/feedback">反馈、意见、建议</a></li>
-    <li><a href="https://github.com/xiayizhang">@xiayizhang</a></li>
-</ul>
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Hi, I am XiayiZhang.</h1>
+  <p>This is my page.</p> 
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">部署的网页/deployed page：</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页 home</a></li>
+        <li><a href="/wajg">缺德导航 Ungrateful navigation</a></li>
+        <li><a href="/bomb_weeper">扫雷 bomb weeper</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>关于我 ABOUT ME</h2>
+      <h5>我的照片 photo of me:</h5>
+      <img src="" >
+      <p>我是一个学生党</p>
+      <p>I am a student </p>
+      <h2>网页 PAGES</h2>
+      <p>我同学和我的页面 Pages of my classmates and me</p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="/wajg">缺德导航Ungrateful navigation </a></li>
+        <li><a href="/bomb_weeper">扫雷 bomb_weeper</a></li>
+        <li><a href="/feedback">反馈 feedback</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>this page deployed on GitHub. </p>
+</div>
+</body>
 </html>
