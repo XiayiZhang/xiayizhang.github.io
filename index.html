@@ -17,9 +17,100 @@
         height: 150px;
         margin-right: 20px;
     }
+    html {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+        body {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+        .body-class{
+           	background: #FFFFFF;
+         }
+        .modal{
+          width: 300px;
+          margin: 0 auto;
+          position: relative;
+          top: 50%; 
+          background: #ffffff;
+          border-radius: 5px;
+        }
+        .confirm{
+          height: 50px;
+          border-top: 1px solid #eee;
+          display: flex;
+        }
+        .confirm>span{
+          flex: 1;
+          height: 50px;
+          line-height: 50px;
+          font-size: 16px;
+          text-align: center;
+        }
+        .confirm>span:nth-child(1){
+          color: red;
+        }
+        .confirm>span:nth-child(2){
+          border-left: 1px solid #eee;
+        }
+        .title{
+          text-align: center;
+          border-bottom: 1px solid #eee;
+          margin-bottom: 10px;
+        }
+        .title>p{
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold;
+
+        }
+        .important{
+          color: red;
+        }
+        .close-but:hover{
+          opacity: 0.5;
+        }
+        .content{
+          max-height: 500px;
+          overflow-y:auto;
+        }
+        .content>span{
+          padding: 0 10px 10px 10px;
+        }
+        .hidden{
+          display: none
+        }
   </style>
 </head>
 <body>
+    <div class="modal" id="modal">
+      <div class="title">
+        <p class="important">打赏</p>
+      </div>
+      <div class="content">
+        <span id="msg">扫码打赏</span>
+        <br>
+      </div>
+      <div class="confirm" onclick="fnClose()">
+        <span class="close-but">关闭 Close</span>
+      </div>
+    </div>
+	<script type="text/javascript">
+        function dashang(){
+	  let modalHeight = document.getElementById('modal').offsetHeight;
+	  document.getElementById('modal').style.marginTop=-(modalHeight/2)+"px";
+	  
+	  function fnClose(){
+		  document.getElementById('modal').setAttribute("class","hidden");
+		  document.getElementById('body').setAttribute("class","body-class");
+	  };
+	}
+        </script>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Hi, I am <a href="https://github.com/xiayizhang" >@XiayiZhang.</a></h1>
   <p>This is my page.</p> 
@@ -53,6 +144,7 @@
       <p>是不是很神似？Is it very similar?</p>
 	    <p>我是一个学生党</p>
 	    <p>I am a student </p>
+	    <button onclic="dashang">打赏</button>
 	    <h2>网页 PAGES</h2>
       <p>我同学和我的页面 Pages of my classmates and me</p>
       <ul class="nav nav-pills nav-stacked">
