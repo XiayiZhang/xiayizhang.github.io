@@ -8,10 +8,41 @@
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script>
+        	if (isMobile()) {
+            		var bodyBgs = [];  
+         		bodyBgs[0] = "/img/bg/phone/100112443_p0.jpg";  
+         		bodyBgs[1] = "/img/bg/phone/100732567_p0.jpg";  
+         		bodyBgs[2] = "/img/bg/phone/100762890_p0.jpg";  
+         		bodyBgs[3] = "/img/bg/phone/100785853_p0.jpg";  
+         		bodyBgs[4] = "/img/bg/phone/100808415_p0.png";  
+         		bodyBgs[5] = "/img/bg/phone/100816374_p0.jpg"; 
+			bodyBgs[6] = "/img/bg/phone/100824949_p0.jpg";
+			bodyBgs[7] = "/img/bg/phone/100837064_p0.jpg";
+			bodyBgs[8] = "/img/bg/phone/100853913_p0.jpg";
+         		var randomBgIndex = Math.round( Math.random() * 8);
+         		document.write('body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}');  
+        	} else {
+            		var bodyBgs = [];  
+         		bodyBgs[0] = "/img/bg/pc/100087608_p0.jpg";  
+         		bodyBgs[1] = "/img/bg/pc/100108483_p1.png";  
+         		bodyBgs[2] = "/img/bg/pc/100261135_p0.jpg";  
+         		bodyBgs[3] = "/img/bg/pc/100463797_p0.jpg";  
+         		bodyBgs[4] = "/img/bg/pc/100740042_p0.jpg";  
+         		bodyBgs[5] = "/img/bg/pc/100879911_p0.jpg";
+			bodyBgs[6] = "/img/bg/pc/100905849_p0.png";
+         		var randomBgIndex = Math.round( Math.random() * 6); //请按图片的数量替换这里的数字"5"  
+         		document.write('body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}');  
+        	}
+
+        	function isMobile() {
+            		let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+             		return flag;
+    		}
+	</script>
 <style>
     .fakeimg {
         height: 200px;
-         background: #aaa;
     }
     img {
         float: left;
@@ -67,7 +98,7 @@
     <div class="col-sm-4">
       <h2>关于我 ABOUT ME</h2>
       <h5>我的照片 photo of me:</h5>
-      <img src="https://i2.hdslb.com/bfs/face/aa7de6ec88dc0a93d872e50c41c90ad3fa3af98f.jpg">
+      <img src="/img/icon.jpg">
 	    <p>是不是很神似？Is it very similar?</p>
             <p>我是一个学生党</p>
 	    <p>I am a student </p>
