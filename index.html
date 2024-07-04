@@ -21,7 +21,7 @@
 			bodyBgs[7] = "/img/bg/phone/100837064_p0.jpg";
 			bodyBgs[8] = "/img/bg/phone/100853913_p0.jpg";
          		var randomBgIndex = Math.round( Math.random() * 8);
-         		document.write('body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}');  
+         		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>');  
         	} else {
             		var bodyBgs = [];  
          		bodyBgs[0] = "/img/bg/pc/100087608_p0.jpg";  
@@ -32,7 +32,7 @@
          		bodyBgs[5] = "/img/bg/pc/100879911_p0.jpg";
 			bodyBgs[6] = "/img/bg/pc/100905849_p0.png";
          		var randomBgIndex = Math.round( Math.random() * 6); //请按图片的数量替换这里的数字"5"  
-         		document.write('body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}');  
+         		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>');  
         	}
 
         	function isMobile() {
