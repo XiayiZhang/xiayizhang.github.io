@@ -9,6 +9,7 @@
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	 <script>
+		 document.getElementById('popup').style.display = 'block';
         	if (isMobile()) {
             		var bodyBgs = [];  
          		bodyBgs[0] = "/img/bg/phone/100112443_p0.jpg";  
@@ -41,6 +42,20 @@
     		}
 	</script>
 <style>
+        /* 弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            z-index: 9999;
+        }
     .fakeimg {
         height: 200px;
     }
@@ -112,6 +127,23 @@
 	    <a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a>
 	    <div class="border:solid;">
 	    <h3>公告 ANNOUNCEMENT</h3>
+<div id="popup" class="popup">
+        <h2>关于域名更改</h2> <br>
+	<h2>About Domain Name Changes</h2>
+        <p>域名将会在审核通过后更改至xiayizhang.cloudns.ch或x1ayizhang.eu.org</p>
+	<p>The domain name will be changed to xiayizhang.cloudns.ch OR x1ayizhang.eu.org</p>
+        <button onclick="hidePopup()">关闭弹窗</button>
+    </div>
+
+    <script>
+        // 显示弹窗
+
+
+        // 隐藏弹窗
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
 	    <hr>
 		<div class="text-align:center;">
 		    <h1>新开服务器 1.20.4-1.21 基岩JAVA互通</h1><br>
@@ -119,6 +151,7 @@
 		    <b><a href="https://www.natpierce.cn/">皎月连</a>链接码：</b><code>68753306</code><b></b><br>
 		    <em>可以开挂，可以透视!!!</em>
 		    <a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a>
+			
 		</div>
 	    <hr>
             </div>	    
