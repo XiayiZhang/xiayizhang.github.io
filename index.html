@@ -1,160 +1,433 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<base target="_blank">
-	<meta charset="utf-8"> 
-	<meta name ="keywords" content="homepage,xiayizhang">
-	<title>XiayiZhang</title>
-	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIAAoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////////////////////////////////////////v3+/+vp/P/l4/z/+Pf9//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+///Szvv/vLr8/7y6/P/Avvv/8vH8////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8e/9/7y6/P+8uvz/vLr8/7y6/P/T0fv////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////r6f3/vLr8/7y6/P+8uvz/vLr8/87L/P///v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+vp/f/Av/3/wcL8/8LD/P/Awfz/z838//7+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////f4/v/e4fz/zdP7/8rR/P/K0fz/ytH8/8rR/P/K0fz/1dr8/+zu/P/+/v/////////////////////////////////////////////////////////////////////////////////////////////////////////////p6vz/zNL8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/9jd+//6+v7/////////////////////////////////////////////////////////////////////////////////////////////////5Ob8/8rR/P/K0fz/ytH8/7vB5v/CyfH/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/9LX+//5+v7//////////////////////////////////////////////////////////////////////////////////////+3u/P/L0fz/ytH8/8rR/P/Ax+7/aWt5/8bM9v/K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/9fb+//+/v/////////////////////////////////////////////////////////////////////////////8/P7/0NX7/8rR/P/K0fz/yM/5/1pbaP+vtNb/nqPD/3N1jP9pbID/Z2p+/25xhf+/xez/dXeK/8fO+P/K0fz/ytH8/+rs/P///////////////////////////////////////////////////////////////////////////+nr/f/K0fz/ytH8/8rR/P+ChZv/n6TB/3p+l/8iIif/Dg0P/wMCA/8CAgL/BAQE/zw8Q/9YWWL/wMbv/8rR/P/K0fz/09f7///+/v///////////////////////////////////////////////////////v7//+bo/P/T2Pz/zdP8/8rR/P/K0fz/ytH8/0JDTP86O0H/ZWh6/5WZuP+Vmbj/l5u6/5ufv/+Jjan/REVP/31/jP/Gzff/ytH8/8rR/P/K0fz/0db8/9vf+//39/7////////////////////////////////////////////k5vz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/Q0NN/1FSW/8+Pkj/bW+E/3d5kP97fpX/fH+X/3h7kv9qa3n/oKTA/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/9DV+//7+/7//////////////////////////////////v7//8/U+//K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P9oan3/qa3N/8rR/P++xOz/tLrf/73D6v/Bxu//xcv1/8jP+f/K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/+zu/f/////////////////////////////////+/v//ztT7/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/52iwP+ipsX/qq/S/0RFUf8wMDj/JyYt/3x/lv/K0fz/uL7i/6aqyf/K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/7O39///////////////////////////////////////h4/z/ytH8/8rR/P/K0fz/ytH8/8nQ+v/Iz/n/ydD7/8nQ+//K0fz/ytH8/8rR+/+jp8n/s7jd/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/8rR/P/K0fz/ytH8/87U/P/7+/7///////////////////////////////////////Lw8f/Fwtn/ys72/8rR/P/K0fv/VFVj/zc4Qf/Bx+//ytH8/8rR/P/K0fz/ytH8/8rR/P+0ut//cHOK/46Sr//K0fz/ytH8/7O43f/K0fz/ytH8/8rQ+v/Hyer/1dHY////////////////////////////////////////////8vDu/7qxqP+7sq7/y9D8/8jP+P85OUD/LCw0/8fN9//K0fz/nqLB/8rR/P/K0fz/ytH8/2Rmef8JCAn/cHKI/8rR/P+/xu7/QUJO/8rR/P/K0fz/wsDT/7qxqP/Sy8b////////////////////////////////////////////y8O7/urGo/7uyrf/M0Pz/ydD6/0VFTf9bXW7/ytH8/6Gmxv9hY3T/ytH8/8rR/P/K0fz/WFlr/wcGB/95fZb/ytH8/4iMpf9rbYH/ytH8/8rR/P/DwNL/urGo/9LLxv////////////////////////////////////////////Lw7v+6saj/u7Kt/8zQ/P/K0fz/QEFJ/4CClf+gpcX/Jycs/7K43f/K0fz/ytH8/8rR/P9nan7/BAME/01PXP/J0Pr/QEFL/7e94v/K0fz/ytH8/8PA0v+6saj/0svG////////////////////////////////////////////8vDu/7qxqP+7sqz/zNH8/8rR/P86OkL/MTE1/zIzO/+tstb/ytH8/8rR/P/K0fz/ytH8/5GVsv8HBwj/UVFe/2Zoe/98f5f/ytH8/8rR/P/K0fz/wr/R/7qxqP/Sy8b////////////////////////////////////////////08vH/urGp/7qwqf/Kz/f/ytH8/6601/+eo8P/x874/8rR/P/K0fz/ytH8/8rR/P/K0fz/xcz1/05PXP8oKCz/VFZk/8XL9P/K0fz/ytH8/8rR/P/Bvcj/urGo/9PNyf////////////////////////////////////////////v7+/+7san/urGo/8XG4/+3u+D/ytH8/7a63//K0Pv/ytH8/7e53v/K0fz/w8jx/73B6f/K0fz/trne/7e84v/Izvj/t7rg/8rR/P+4veL/yM33/721t/+onpf/29fT/////////////////////////////////////////////////8a+uP+5r6f/a2Fh/5ORq/+2ud7/TUJH/8rQ+f+Oi6L/dW9//8PI8f9dVV3/rK7Q/6aox/9bU1v/ytD7/3Vwgf+Oi6T/ub3i/09ESP/DxOX/iX15/2lfWf/r5+b/////////////////////////////////////////////////29XS/2pfWv88MS3/f3qN/0xCRP89MjD/jYqg/z0xLv9tZ3P/XVVd/zwxLf+IhZr/Qjc2/1VMUP92cIH/PDEt/313iv9OREj/PTEu/4mCjf89Mi7/bWNe//z8/P/////////////////////////////////////////////////q6en/Qjc0/zwxLf88MS7/PDEt/zwxLf88MS7/PDEt/zwxLv88MS3/PDEt/zwxLv88MS3/PDEu/zwxLf88MS3/PTEu/zwxLf88MS3/PTEu/zwxLf+alJL///////////////////////////////////////////////////////////+blZT/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/UEZD//Pz8v////////////////////////////////////////////////////////////v6+v9rYl//PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/0A2Mv/Py8v///////////////////////////////////////////////////////////////////////Lx8f9nXlv/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf9CNzP/wb28//////////////////////////////////////////////////////////////////////////////////j39/+Nh4X/PjIv/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/PDEt/zwxLf88MS3/W1FO/9bT0//////////////////////////////////////////////////////////////////////////////////////////////////a19f/gXp4/0Q5Nv88MS7/PDEt/zwxLf88MS3/PDEt/zwxLf89MS7/YVhV/7Csqv/6+vr/////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Pj4/9LPz/+3s7L/rqmo/66pqP+xrKz/xMDA/+no6P//////////////////////////////////////////////////////////////////////">
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	 <script>
-		 document.getElementById('popup').style.display = 'block';
-        	if (isMobile()) {
-            		var bodyBgs = [];  
-         		bodyBgs[0] = "/img/bg/phone/100112443_p0.jpg";  
-         		bodyBgs[1] = "/img/bg/phone/100732567_p0.jpg";  
-         		bodyBgs[2] = "/img/bg/phone/100762890_p0.jpg";  
-         		bodyBgs[3] = "/img/bg/phone/100785853_p0.jpg";  
-         		bodyBgs[4] = "/img/bg/phone/100808415_p0.png";  
-         		bodyBgs[5] = "/img/bg/phone/100816374_p0.jpg"; 
-			bodyBgs[6] = "/img/bg/phone/100824949_p0.jpg";
-			bodyBgs[7] = "/img/bg/phone/100837064_p0.jpg";
-			bodyBgs[8] = "/img/bg/phone/100853913_p0.jpg";
-         		var randomBgIndex = Math.round( Math.random() * 8);
-         		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>');  
-        	} else {
-            		var bodyBgs = [];  
-         		bodyBgs[0] = "/img/bg/pc/100087608_p0.jpg";  
-         		bodyBgs[1] = "/img/bg/pc/100108483_p1.png";  
-         		bodyBgs[2] = "/img/bg/pc/100261135_p0.jpg";  
-         		bodyBgs[3] = "/img/bg/pc/100463797_p0.jpg";  
-         		bodyBgs[4] = "/img/bg/pc/100740042_p0.jpg";  
-         		bodyBgs[5] = "/img/bg/pc/100879911_p0.jpg";
-			bodyBgs[6] = "/img/bg/pc/100905849_p0.png";
-         		var randomBgIndex = Math.round( Math.random() * 6); //请按图片的数量替换这里的数字"5"  
-         		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>');  
-        	}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>XiayiZhang</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        	function isMobile() {
-            		let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-             		return flag;
-    		}
-	</script>
-<style>
-    .fakeimg {
-        height: 200px;
-    }
-    img {
-        float: left;
-        width: 150px;
-        height: 150px;
-        margin-right: 20px;
-   }
-</style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #fff0f5 0%, #ffe4ed 100%);
+            color: #4a2c3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffdfe6;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f9a8d4;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f472b6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        .avatar {
+            width: 130px;
+            height: 130px;
+            background: linear-gradient(135deg, #fbc4d5, #f9a8d4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 20px 35px -8px rgba(244, 114, 182, 0.4);
+            transition: transform 0.3s;
+            border: 3px solid #ffffffaa;
+        }
+        .avatar i {
+            font-size: 4rem;
+            color: #ffffff;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+        }
+        .avatar:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #b13e6b, #f472b6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.01em;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #b85c8a;
+            margin-top: 0.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+        .social-links a {
+            background: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #c2417c;
+            font-size: 1.4rem;
+            transition: all 0.25s;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            background: #f472b6;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px -10px #f472b6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 248, 250, 0.85);
+            backdrop-filter: blur(2px);
+            border-radius: 32px;
+            padding: 1.8rem;
+            box-shadow: 0 20px 30px -12px rgba(244, 114, 182, 0.15);
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 215, 230, 0.7);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.96);
+            box-shadow: 0 28px 38px -14px rgba(244, 114, 182, 0.3);
+        }
+        .card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-left: 4px solid #f472b6;
+            padding-left: 1rem;
+            color: #ac3f6e;
+        }
+        .card h3 i {
+            color: #f472b6;
+            font-size: 1.4rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 0.5rem;
+        }
+        .skill-tag {
+            background: #ffe4f0;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #9e3c67;
+            transition: 0.2s;
+        }
+        .skill-tag:hover {
+            background: #fbcfe8;
+            transform: scale(1.02);
+            color: #b13e6b;
+        }
+
+        .project-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ffe0ec;
+            padding-bottom: 1rem;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .project-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .project-title a {
+            color: #b13e6b;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .project-title a:hover {
+            color: #f472b6;
+            text-decoration: underline;
+        }
+        .project-date {
+            font-size: 0.75rem;
+            color: #cd839f;
+            font-weight: normal;
+        }
+        .project-desc {
+            font-size: 0.9rem;
+            color: #6e4d5e;
+            margin-top: 0.3rem;
+        }
+
+        .about-card {
+            grid-column: 1 / -1;
+            background: linear-gradient(115deg, #fff6fa 0%, #fff0f7 100%);
+        }
+        .about-text {
+            font-size: 1rem;
+            color: #5c3a4a;
+            margin-top: 0.8rem;
+            line-height: 1.6;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(255, 235, 242, 0.7);
+            border-radius: 48px;
+            backdrop-filter: blur(4px);
+            border: 1px solid #ffcbd9;
+        }
+        .contact h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #b83e70;
+        }
+        .contact-email {
+            font-size: 1.2rem;
+            background: white;
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px;
+            box-shadow: 0 5px 12px rgba(244, 114, 182, 0.2);
+            margin-top: 0.6rem;
+        }
+        .contact-email i {
+            margin-right: 8px;
+            color: #f472b6;
+        }
+        .contact-email a {
+            text-decoration: none;
+            color: #ac3f6e;
+            font-weight: 500;
+        }
+        .contact-email a:hover {
+            color: #f472b6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #c27d9b;
+            border-top: 1px solid #ffe0ec;
+            padding-top: 2rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 680px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card h3 {
+                font-size: 1.3rem;
+            }
+            .avatar {
+                width: 100px;
+                height: 100px;
+            }
+            .avatar i {
+                font-size: 3rem;
+            }
+        }
+
+        .floating-heart {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2rem;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 999;
+            animation: floatHeart 4s infinite;
+        }
+        @keyframes floatHeart {
+            0% { transform: translateY(0px); opacity: 0.5; }
+            50% { transform: translateY(-8px); opacity: 0.9; }
+            100% { transform: translateY(0px); opacity: 0.5; }
+        }
+        /* 圆形图片 */
+		.rounded-img {
+    		width: 100px;          /* 固定宽度 */
+    		height: 100px;         /* 固定高度（与宽度一致） */
+    		object-fit: cover;     /* 保证图片填充不变形 */
+    		border-radius: 50%;    /* 圆形 */
+		}
+    </style>
 </head>
 <body>
-<div class="jumbotron text-center" style="margin-bottom:0">
-<div style="font-size: 36px;" id="text">hello,world!</div>
-<script>
-  var str = '<h1>hi👋! I am <a href="http://github.com/xiayizhang" >GitHub@xiayizhang</a></h1><br><p><a href="https://space.bilibili.com/3494378876176658">Bilibili:博棋哥</a>';
-  var i = 0;
-  function typing(){
-    var divTyping = document.getElementById('text');
-    if (i <= str.length) {
-      divTyping.innerHTML = str.slice(0, i++) + '▊';
-      setTimeout('typing()', 70);
-    }
-    else{
-      divTyping.innerHTML = str;
-    }
-  }
-  typing();
-</script>
-  <p>This is my page.</p> 
+
+<div class="floating-heart">
+    <i class="fas fa-heart" style="color: #f9a8d4;"></i>
 </div>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">部署的网页/deployed page：</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">主页 home</a></li>
-        <li><a href="/wajg">缺德导航 Ungrateful navigation</a></li>
-        <li><a href="/bomb_weeper">扫雷 bomb weeper</a></li>
-	<li><a href="javascript:void(0);" onclic="crash">死机按钮Crash button</a></li>
-	<li><a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 <div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>关于我 ABOUT ME</h2>
-      <h5>我的照片 photo of me:</h5>
-      <img src="/img/icon.jpg">
-	    <p>是不是很神似？Is it very similar?</p>
-            <p>我是一个学生党</p>
-	    <p>I am a student </p>
-	    <!--<img src="img/ACB5828E1C3697D2B3C7DE16CAFDD328.jpg"><br>
-	    <strong>打赏</strong>-->
-	    <a href="mailto:zhangxiayi_1027@outlook.com">zhangxiayi_1027@outlook.com</a><br>
-	    <img src="https://www.codewars.com/users/XiayiZhang/badges/large"><br>
-	    <<h4>discord:xiayi_sudo_70951</h4><br>
-	    <a href="https://pixiv.net/users/97849303">pixiv:夏羿SUDO</a>
-	    <a href="https://space.bilibili.com/3494378876176658">Bilibili:博棋哥</a>
-	    <a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a>
-	    <div class="border:solid;">
-	    <h3>公告 ANNOUNCEMENT</h3>
-		    <hr>
-        <h2>关于域名更改</h2> <br>
-	<h2>About Domain Name Changes</h2>
-        <p>域名将会在审核通过后重定向至xiayizhang.cloudns.ch或x1ayizhang.eu.org</p>
-	<p>The domain name will be redirected to xiayizhang.cloudns.ch OR x1ayizhang.eu.org after approval</p>
+    <div class="hero">
+        <div class="avatar">
+            <!--<i class="fas fa-code"></i>-->
+            <img src="https://avatars.githubusercontent.com/u/122589407?v=4" class="rounded-img" alt="头像">
+        </div>
+        <h1>XiayiZhang ✨</h1>
+        <div class="tagline">
+            <i class="fas fa-terminal">自己同一性の危機だ！</i>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/XiayiZhang" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=0QOAP-jED6O0F76sNl2CCW0-F21qDSDF" target="_blank" aria-label="QQ"><i class="fab fa-qq"></i></a>
+            <a href="mailto:zhangxiayi_1027@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
 
-	    <hr>
-		<div class="text-align:center;">
-		    <h1>新开服务器 1.20.4-1.21 基岩JAVA互通</h1><br>
-		    <del>需要内网穿透软件，不方便的话就算了/(ㄒoㄒ)/~~</del><br>
-		    <b><a href="https://www.natpierce.cn/">皎月连</a>链接码：</b><code>68753306</code><b></b><br>
-		    <em>可以开挂，可以透视!!!</em>
-		    <a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a>
-			
-		</div>
-	    <hr>
-            </div>	    
-	<h2>网页 PAGES</h2>
-      <p>我同学和我的页面 Pages of my classmates and me</p>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="/wajg">缺德导航Ungrateful navigation </a></li>
-        <li><a href="/bomb_weeper">扫雷 bomb_weeper</a></li>
-        <li><a href="/feedback">反馈 feedback</a></li>
-        <li><a href="https://qm.qq.com/q/IOWBNyXNII">服务器QQ群</a></li>
-      </ul>
-      <hr class="hidden-sm hidden-md hidden-lg">
+    <div class="grid">
+        <div class="card about-card">
+            <h3><i class="fas fa-feather-alt"></i> About me</h3>
+            <div class="about-text">
+                👋 こんにちは！Im XiayiZhang 🏳️‍⚧️️🍥️ | learning Haskell...<br>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-cogs"></i> Tech Stack</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Rust 🦀</span>
+                <span class="skill-tag">Haskell (learning)</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Java / Kotlin</span>
+            </div>
+            <div style="margin-top: 1.2rem;">
+                <i class="fas fa-heart" style="color:#f472b6; margin-right: 6px;"></i> 
+                <span style="font-size:0.85rem;">Functional Programming · Zero-cost Abstraction · Async</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-gamepad"></i> Minecraft</h3>
+            <div class="project-item">
+                <div class="project-title">
+                    <span><a href="https://github.com/XiayiZhang/EnderPearlTeleporter">EnderpearlTeleporter</a></span>
+                    <span class="project-date">2024</span>
+                </div>
+                <div class="project-desc">this is a plugin which used for teleportation. This plugin functions similar to the tpa plugin, it can bind player to an endpearl and tp the binded player to another player. This plugin is still updating.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-star"></i> Favorite Anime Character</h3>
+            <div style="text-align: center;">
+                <img src="https://github.com/XiayiZhang/xiayizhang/blob/main/onimai.jpg?raw=true" alt="Oyama Mahiro" style="width: 100%; max-width: 180px; border-radius: 24px; margin: 0 auto 1rem; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                <p style="font-style: italic; color: #b13e6b;">“自己同一性の危機だ！”</p>
+                <p><strong>—— Oyama Mahiro</strong></p>
+            </div>
+        </div>
     </div>
+
+    <div class="contact">
+        <h3>📫 Contact me</h3>
+        <div class="contact-email">
+            <i class="fab fa-qq"></i>
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=0QOAP-jED6O0F76sNl2CCW0-F21qDSDF" target="_blank">QQ: 2932358406</a>
+        </div>
+        <div class="contact-email" style="margin-top: 0.8rem;">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:zhangxiayi_1027@outlook.com">zhangxiayi_1027@outlook.com</a>
+        </div>
+        <div style="margin-top: 1.5rem;">
+            <i class="fab fa-github"></i> <a href="https://github.com/XiayiZhang" target="_blank" style="color:#ac3f6e;">github.com/XiayiZhang</a>
+        </div>
+        <div style="margin-top: 1rem; font-size: 0.85rem;">
+            <i class="fas fa-heart"></i> stay hungry,stay foolish.
+        </div>
     </div>
-	<script>
-            function crash() {
-		alert("say byebye to your PC ...")
-                var l="a"
-                for(i=1;i>0;i++){
-                    l=l.replace(new RegExp("","g"),l)
-                }
-	    }
-        </script>
-  </div>
+
+    <footer>
+        © 2025 XiayiZhang · 自己同一性の危機だ
+    </footer>
 </div>
-<div class="jumbotron text-center" style="margin-bottom:0">
-</div>
+
+<script>
+    console.log("%c🌸 欢迎来到 XiayiZhang的主页！内存安全の诱惑 🌸", "color: #f472b6; font-size: 14px; font-weight: bold;");
+    // 点击爱心特效
+    document.body.addEventListener('click', function(e) {
+        const heart = document.createElement('div');
+        heart.innerHTML = '💗';
+        heart.style.position = 'absolute';
+        heart.style.left = e.pageX + 'px';
+        heart.style.top = e.pageY + 'px';
+        heart.style.fontSize = '24px';
+        heart.style.pointerEvents = 'none';
+        heart.style.opacity = '0.8';
+        heart.style.transform = 'translate(-50%, -50%)';
+        heart.style.transition = 'all 1s ease';
+        document.body.appendChild(heart);
+        setTimeout(() => {
+            heart.style.opacity = '0';
+            heart.style.transform = 'translate(-50%, -80px)';
+            setTimeout(() => heart.remove(), 1000);
+        }, 50);
+    });
+</script>
 </body>
 </html>
